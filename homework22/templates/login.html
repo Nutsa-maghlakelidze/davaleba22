@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<br>
+<form method="post" action="{{ url_for('login') }}">
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input type="text" class="form-control" name="username" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+    <button id="Enter" type="submit" class="btn btn-primary mt-2">Login</button>
+</form>
+{% endblock %}
